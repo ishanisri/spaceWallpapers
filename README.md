@@ -21,7 +21,8 @@
       ```
             python3 webscraper.py
       ```
- 5. Now for the wallpapers to be picked randomly from the scraped images and changed automatically at regualr intervals, we have to put a script to be run as a cron    job.
+ 5. Now for the wallpapers to be picked randomly from the scraped images and changed automatically at regualr intervals, we have to put a script to be run as a cron job.
+ <ul>
    i) Open the list of cron jobs as 
     ```
         crontab -e
@@ -31,4 +32,5 @@
      ```
         * * * * * path/to/choose_wallpaper.sh
      ```
+  </ul>
    This runs the bash script `choose_wallpaper.sh` and changes the wallpaper every minute.
