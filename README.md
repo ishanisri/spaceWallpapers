@@ -23,11 +23,11 @@
       ```
  5. Now for the wallpapers to be picked randomly from the scraped images and changed automatically at regualr intervals, we have to put a script to be run as a cron job.
  <ul>
-   i) Open the list of cron jobs as 
+   <li> Open the list of cron jobs as 
     ```
         crontab -e
     ```
-    ii) Add your own cron job in the list in the format ` m h  dom mon dow   command` as 
+    <li> Add your own cron job in the list in the format ` m h  dom mon dow   command` as 
 
      ```
         * * * * * path/to/choose_wallpaper.sh
